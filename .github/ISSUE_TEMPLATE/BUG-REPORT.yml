@@ -1,6 +1,6 @@
-name: "🐛 Bug Report"
-description: Create a new ticket for a bug.
-title: "🐛 [BUG] - <title>"
+name: "new_issues"
+description: Новая задача.
+title: "[BUG] - <название>"
 labels: [
   "bug"
 ]
@@ -8,55 +8,55 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: "Description"
-      description: Please enter an explicit description of your issue
-      placeholder: Short and explicit description of your incident...
+      label: "Описание"
+      description: Пожалуйста, введите четкое описание вашей проблемы.
+      placeholder: Краткое и четкое описание проблемы...
     validations:
       required: true
   - type: input
     id: reprod-url
     attributes:
-      label: "Reproduction URL"
-      description: Please enter your GitHub URL to provide a reproduction of the issue
-      placeholder: ex. https://github.com/USERNAME/REPO-NAME
+      label: "URL для воспроизведения"
+      description: Отправьте ссылку на видео.
+      placeholder: например, https://github.com/USERNAME/REPO-NAME
     validations:
-      required: true
+      required: false
   - type: textarea
     id: reprod
     attributes:
-      label: "Reproduction steps"
-      description: Please enter an explicit description of your issue
+      label: "Шаги для воспроизведения"
+      description: Пожалуйста, введите четкое описание вашей проблемы.
       value: |
-        1. Go to '...'
-        2. Click on '....'
-        3. Scroll down to '....'
-        4. See error
+        1. Перейдите на '...'
+        2. Нажмите на '....'
+        3. Прокрутите вниз до '....'
+        4. Увидьте ошибку
       render: bash
     validations:
-      required: true
+      required: false
   - type: textarea
     id: screenshot
     attributes:
-      label: "Screenshots"
-      description: If applicable, add screenshots to help explain your problem.
+      label: "Скриншоты"
+      description: Добавьте скриншоты для лучшего объяснения вашей проблемы.
       value: |
-        ![DESCRIPTION](LINK.png)
+        ![ОПИСАНИЕ](LINK.png)
       render: bash
     validations:
       required: false
   - type: textarea
     id: logs
     attributes:
-      label: "Logs"
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: "Логи"
+      description: Пожалуйста, скопируйте и вставьте любые соответствующие логи. Они будут автоматически отформатированы в код, так что использование обратных кавычек не требуется.
       render: bash
     validations:
       required: false
   - type: dropdown
     id: browsers
     attributes:
-      label: "Browsers"
-      description: What browsers are you seeing the problem on ?
+      label: "Браузеры"
+      description: В каких браузерах вы наблюдаете проблему?
       multiple: true
       options:
         - Firefox
@@ -69,8 +69,8 @@ body:
   - type: dropdown
     id: os
     attributes:
-      label: "OS"
-      description: What is the impacted environment ?
+      label: "ОС"
+      description: Какая система?
       multiple: true
       options:
         - Windows
